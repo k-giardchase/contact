@@ -9,7 +9,7 @@
           <p>Here are all of your contacts:</p>
           <ul>
               {% for contact in contacts %}
-                  <li>{{ contact.getName }}</li>
+                  <p>{{ contact.getName }}</p>
                   <li>{{ contact.getNumber }}</li>
                   <li>{{ contact.getAddress }}</li>
               {% endfor %}
