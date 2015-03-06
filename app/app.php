@@ -19,10 +19,10 @@
         return $app['twig']->render('contacts.twig', array('contacts' => Contact::getAll()));
     });
 
-    $app->post("/contacts", function() {
+    $app->post("/contacts", function() use ($app) {
         $contact = new Contact($_POST['input_name'], $_POST['input_number'], $_POST['input_address']);
         $contact->save();
-        return $app['twig']->render('create_contact.twig', array('new_contact' => $contact));
+        return $app['twig']->render('create_contact.twig', array('newcontact' => $contact));
     });
 
     $app->post("/delete_contacts", function() use($app) {
