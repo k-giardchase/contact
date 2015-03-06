@@ -1,4 +1,4 @@
-<!-- By Kyle Giard-Chase
+By Kyle Giard-Chase
 
 Contact address book which allows user to add and delete all contacts from list. Contact form includes fields for name, phone number, and address.
 
@@ -33,4 +33,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE. -->
+THE SOFTWARE.
