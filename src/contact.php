@@ -1,0 +1,44 @@
+<?php
+
+class Contact
+{
+    private $name;
+    private $number;
+    private $address;
+
+    function __construct($name, $number, $address)
+    {
+      $this->name = $name;
+      $this->number = $number;
+      $this->address = $address;
+    }
+
+    function setName($new_name)
+    {
+      $this->name = (string) $new_name;
+    }
+
+    function getName()
+    {
+      return $this->name;
+    }
+
+    function setNumber($new_number)
+    {
+      $this->name = (int) $new_number;
+    }
+
+    function getNumber()
+    {
+      return $this->number;
+    }
+
+    function setAddress($new_address)
+    {
+      $this->address = (string) $new_address;
+    }
+}
+
+
+
+?>
