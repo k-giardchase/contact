@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Your Address Book</title>
+</head>
+<body>
+  <h1>Your Address Book</h1>
+  {% if contacts is not empty %}
+      <p>Here are all of your contacts:</p>
+      <ul>
+          {% for contact in contacts %}
+              <li>{{ task.getName }}</li>
+              <li>{{ task.getNumber }}</li>
+              <li>{{ task.getAddress }}</li>
+          {% endfor %}
+      </ul>
+  {% endif %}
+
+<body>
+</html>

@@ -38,6 +38,11 @@ class Contact
       $this->address = (string) $new_address;
     }
 
+    function getAddress()
+    {
+      return $this->address;
+    }
+
     function save()
     {
       array_push($_SESSION['list_of_contacts'], $this);
