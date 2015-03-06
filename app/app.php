@@ -20,9 +20,14 @@
     });
 
     $app->post("/contacts", function() {
-        $contact = new Contact($_POST['name'], $_POST['number'], $_POST['address']);
+        $contact = new Contact($_POST['input_name'], $_POST['input_number'], $_POST['input_address']);
         $contact->save();
-        return $app['twig']->render('create_contact.twig', array('new_contact' => $contact))
+        return $app['twig']->render('create_contact.twig', array('new_contact' => $contact));
+    });
+
+    $app->post("/delete_contacts", function() use($app) {
+        Class::deleteAll();
+        return $app['twig']->render('delete_contacts.twig');
     });
 
     return $app;
