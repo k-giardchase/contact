@@ -22,7 +22,7 @@
     $app->post("/contacts", function() {
         $contact = new Contact($_POST['name'], $_POST['number'], $_POST['address']);
         $contact->save();
-        return $app['twig']->render('create_contact.twig', array('newcontact' => $contact))
+        return $app['twig']->render('create_contact.twig', array('new_contact' => $contact))
     });
 
     return $app;

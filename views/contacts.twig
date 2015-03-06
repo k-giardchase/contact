@@ -8,9 +8,9 @@
       <p>Here are all of your contacts:</p>
       <ul>
           {% for contact in contacts %}
-              <li>{{ task.getName }}</li>
-              <li>{{ task.getNumber }}</li>
-              <li>{{ task.getAddress }}</li>
+              <li>{{ contact.getName }}</li>
+              <li>{{ contact.getNumber }}</li>
+              <li>{{ contact.getAddress }}</li>
           {% endfor %}
       </ul>
   {% endif %}
