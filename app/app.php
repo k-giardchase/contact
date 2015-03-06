@@ -14,10 +14,15 @@
         'twig.path' => __DIR__.'/../views'
     ));
 
-    $app->get("/", function () use ($app) {
+    $app->get("/", function() use ($app) {
 
+        return $app['twig']->render('contacts.twig', array('contacts' => Contact::getAll()));
+    });
 
-    return $app['twig']->render('contacts.twig');  
+    $app->post("/contacts", function() {
+        $contact = new Contact($_POST['name'], $_POST['number'], $_POST['address']);
+        $contact->save();
+        return $app['twig']->render('create_contact.twig', array('newcontact' => $contact))
     });
 
     return $app;
