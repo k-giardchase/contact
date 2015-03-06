@@ -4,41 +4,41 @@
   <title>Your Address Book</title>
 </head>
 <body>
-  <div class='container'>
-      <h1>Your Address Book</h1>
-      {% if contacts is not empty %}
-          <p>Here are all of your contacts:</p>
-          <ul>
-              {% for contact in contacts %}
-                  <p>{{ contact.getName }}</p>
-                  <li>{{ contact.getNumber }}</li>
-                  <li>{{ contact.getAddress }}</li>
-              {% endfor %}
-          </ul>
-      {% endif %}
+    <div class='container'>
+        <h1>Your Address Book</h1>
+        {% if contacts is not empty %}
+            <p>Here are all of your contacts:</p>
+            <ul>
+                {% for contact in contacts %}
+                    <p>{{ contact.getName }}</p>
+                    <li>{{ contact.getNumber }}</li>
+                    <li>{{ contact.getAddress }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
 
-      <form action='/contacts' method='post'>
-          <div class='form-group'>
-              <label for='input_name'>Contact name</label>
-              <input id='input_name' name='input_name' type='text'>
-          </div>
+        <form action='/contacts' method='post'>
+            <div class='form-group'>
+                <label for='input_name'>Contact name</label>
+                <input id='input_name' name='input_name' type='text'>
+            </div>
 
-          <div class='form-group'>
-              <label for='input_number'>Contact number - enter with no spaces or dashes </label>
-              <input id='input_number' name='input_number' type='string'>
-          </div>
+            <div class='form-group'>
+                <label for='input_number'>Contact number - enter with no spaces or dashes </label>
+                <input id='input_number' name='input_number' type='string'>
+            </div>
 
-          <div class='form-group'>
-              <label for='input_address'>Contact address</label>
-              <input id='input_address' name='input_address' type='text'>
-          </div>
+            <div class='form-group'>
+                <label for='input_address'>Contact address</label>
+                <input id='input_address' name='input_address' type='text'>
+            </div>
 
-          <button type='submit'>Add contact</button>
-      </form>
+            <button type='submit'>Add contact</button>
+        </form>
 
-      <form action='delete_contacts' method='post'>
-            <button type='submit'>Clear all</button>
-      </form>
-</div>
+        <form action='delete_contacts' method='post'>
+              <button type='submit'>Clear all</button>
+        </form>
+    </div>
 <body>
 </html>
