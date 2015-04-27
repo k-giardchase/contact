@@ -1,22 +1,32 @@
-By Kyle Giard-Chase
+##Developers
+Kyle Giard-Chase
 
-Contact address book which allows user to add and delete all contacts from list. Contact form includes fields for name, phone number, and address.
+##Date
+March 6 2015
 
-Project uses composer to install Silex and Twig dependencies. To install composer, create composer.json file in top of project file and include:
 
-{
-    "require": {
-        "silex/silex": "~1.1",
-        "twig/twig":"~1.0"
-    }
-}
+##Description
+An address book app that allows users to add and delete contacts from a list.
 
-Then run 'composer install' command in terminal.
+##Technologies Used
+PHP <br>
+It uses <a href='https://getcomposer.org/'>Composer</a> to install:
+<li>
+<a href='http://silex.sensiolabs.org/'>Silex</a>
+</li>
+<li><a href='http://twig.sensiolabs.org/'>Twig</a></li>
 
-The MIT License
 
-Copyright (c) 2010-2015 Google, Inc. http://angularjs.org
+##Use and Editing
+To view the app,<br>
+1. Open your command shell, and clone the repository into your home folder using the command `git clone https://github.com/k-giardchase/contact.git`<br>
+2. In the top level of the project folder, run `composer install`<br>
+3. Start a php server by changing directories into the web folder `cd contact/web`
+and start your server `php -S localhost:8000`<br>
+3. Open your browser and navigate to your root path: `localhost:8000`
 
+
+##Copyright (c) 2015 Kyle Giard-Chase
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
